@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { CoursesModule } from './courses/courses.module';
 import { MyFirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
 
@@ -9,10 +10,11 @@ import { SecondComponent } from './second/second.component';
   declarations: [
     AppComponent,
     MyFirstComponent,
-    SecondComponent
+    SecondComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CoursesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
