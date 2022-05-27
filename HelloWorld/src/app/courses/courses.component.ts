@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { CoursesService } from './courses.service';
+
 @Component({
   selector: 'app-courses',
   templateUrl: './courses.component.html',
@@ -8,9 +10,11 @@ import { Component, OnInit } from '@angular/core';
 export class CoursesComponent {
   portalName: string;
 
-  pokemons: string[] = ['Charmander','Squirtle', 'Bulbassaur'];
+  pokemonCourses: string[];
   
-  constructor() {
+  constructor(private coursesService: CoursesService) {
     this.portalName = 'http://gabryel.pokemons';
+
+    this.pokemonCourses = this.coursesService.getPokeCourses();
   }
 }
