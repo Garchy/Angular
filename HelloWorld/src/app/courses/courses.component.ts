@@ -6,5 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./courses.component.css']
 })
 export class CoursesComponent {
+  portalName: string;
 
+  pokemons: string[] = ['Charmander','Squirtle', 'Bulbassaur'];
+  
+  constructor() {
+    this.portalName = 'http://gabryel.pokemons';
+  }
 }

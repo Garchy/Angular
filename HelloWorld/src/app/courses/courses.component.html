@@ -1,3 +1,9 @@
-<p>Courses component!</p>
+<p>courses list of portal: {{portalName}}</p>
+
+<ul>
+    <li *ngFor="let pokemon of pokemons">
+        {{pokemon}}
+    </li>
+</ul>
 
 <app-course-detail></app-course-detail>
