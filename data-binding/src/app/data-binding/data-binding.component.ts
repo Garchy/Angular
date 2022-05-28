@@ -9,11 +9,22 @@ export class DataBindingComponent implements OnInit {
 
   url: string = 'https://github.com/Garchy';
   urlImage: string = 'http://lorempixel.com.br/400/200/?1';
+  currentValue: string = '';
+  savedValue: string = ''
+  isMouseOver: boolean = false;
 
   getValue = () => 1; //Arrow Function
 
   angularCourse: boolean = true;
   getLikeCourse = () => true;
+
+  buttonClicked = () => alert('Clicked!');
+
+  onKeyUp = (event: KeyboardEvent) => this.currentValue = (<HTMLInputElement>event.target).value;
+
+  saveValue = (value: string) => this.savedValue = value;
+
+  onMouseOverOut = () => this.isMouseOver = !this.isMouseOver;
 
   constructor() { }
 
