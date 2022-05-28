@@ -14,7 +14,7 @@
         <img bind-src="urlImage" alt="Imagem BR">
     </article>
  -->
-    <article>
+    <!-- <article>
         <h3>Event Binding</h3>
         <div>
             <button 
@@ -48,5 +48,44 @@
                 Mouse over me!
             </span>
         </div>
+    </article> -->
+
+    <!-- 
+    <article>
+        <h3>Two Way Data Binding</h3>
+        <div>
+
+            <input type="text" 
+            [value]="name"
+            (input)="name = field.value"
+            #field
+            >
+            
+            <input type="text" 
+            [ngModel]="name"
+            (ngModelChange)="name = $event"
+            #field
+            > 
+
+            <input type="text" 
+            [(ngModel)]="name"
+            >
+           
+
+            <p>You typed: {{name}}</p>
+
+            <div>
+                <input type="text" [(ngModel)]="person.name">
+                <input type="text" [(ngModel)]="person.age">
+            </div>
+
+            <p>My name is {{person.name}} and I'm {{person.age}} year old </p>
+        </div>
     </article>
+    -->
+    <article>
+        <h3>Input/OutPut Properties</h3>
+        <app-course [name]="courseName" ></app-course>
+    </article>
+
 </section>

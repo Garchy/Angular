@@ -12,6 +12,14 @@ export class DataBindingComponent implements OnInit {
   currentValue: string = '';
   savedValue: string = ''
   isMouseOver: boolean = false;
+  name: string = 'abc';
+
+  courseName: string = 'Angular';
+
+  person = {
+    name: "Gab",
+    age: '20'
+  }
 
   getValue = () => 1; //Arrow Function
 
