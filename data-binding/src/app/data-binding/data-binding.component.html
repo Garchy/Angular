@@ -1,0 +1,16 @@
+<section>
+    <article>
+        <h3>Interpolation!</h3>
+        <p>String rendered with interpolation: <b>{{ url }}</b></p>
+        <p>Result of 1 + 1: <b>{{1 + 1}}</b></p>
+        <p>Result of 1 + 1 isn't: <b>{{1 + 1 + getValue()}}</b></p>
+        <p>Angular Course e Like Course: <b>{{ angularCourse && getLikeCourse() }}</b></p>
+    </article>
+
+    <article>
+        <h3>Property Binding</h3>
+        <img src="{{ urlImage }}" alt="Imagem BR">
+        <img [src]="urlImage" alt="Imagem BR">
+        <img bind-src="urlImage" alt="Imagem BR">
+    </article>
+</section>
