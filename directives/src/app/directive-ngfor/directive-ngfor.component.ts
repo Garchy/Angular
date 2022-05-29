@@ -9,7 +9,6 @@ export class DirectiveNgforComponent implements OnInit {
 
   PineApplePen: string[] = ['Pen', 'Apple', 'ApplePen'];
 
-
   constructor() { }
 
   ngOnInit(): void {
