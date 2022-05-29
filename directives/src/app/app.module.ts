@@ -7,6 +7,8 @@ import { DirectiveNgSwitchComponent } from './directive-ng-switch/directive-ng-s
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DirectiveNgforComponent } from './directive-ngfor/directive-ngfor.component';
 import { DirectiveNgclassComponent } from './directive-ngclass/directive-ngclass.component';
+import { DirectiveNgstyleComponent } from './directive-ngstyle/directive-ngstyle.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { DirectiveNgclassComponent } from './directive-ngclass/directive-ngclass
     DirectiveNgifComponent,
     DirectiveNgSwitchComponent,
     DirectiveNgforComponent,
-    DirectiveNgclassComponent
+    DirectiveNgclassComponent,
+    DirectiveNgstyleComponent,
   ],
   imports: [
     BrowserModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,23 @@
+<h5>Styles with property binding (style binding)</h5>
+
+<button
+    [style.backgroundColor]="ativo ? 'blue' : 'gray'"
+    [style.color]="ativo ? 'white' : 'black'"
+    [style.fontWight]="ativo ? 'bold' : 'bold'"
+    [style.fontSize]="sizeFont + 'px'"
+    (click)="onClick()">
+    CLICK ME!
+</button>
+<br>
+<button
+[ngStyle]="{
+    'backgroundColor': (ativo ? 'blue' : 'gray'),
+    'color': (ativo ? 'white' : 'black'),
+    'fontWight': (ativo ? 'bold' : 'bold'),
+    'fontSize': sizeFont + 'px'
+}"
+    (click)="onClick()">
+    CLICK ME!
+</button>
+<br>
+<input type="text"[(ngModel)]="sizeFont">
