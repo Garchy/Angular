@@ -1,0 +1,17 @@
+<h5>*ngIf</h5>
+
+<div *ngIf="pokemons.length > 0">
+    Pokemons list here:
+</div>
+
+<div *ngIf="!showPokemons">
+    Pokemons list here (bool):
+</div>
+
+<div [hidden]="showPokemons">
+    Pokemons list here (Hidden):
+</div>
+
+<br>
+
+<button (click)="onShowPokemons()">Show/Hide Pokemons</button>
