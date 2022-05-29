@@ -1,0 +1,27 @@
+<ul ngbNav #nav="ngbNav" class="nav-tabs">
+    <li ngbNavItem>
+        <a ngbNavLink [class.active]="tab=='home'" (click)="tab='home'">
+            Home
+        </a>
+        <ng-template ngbNavContent>Home tab</ng-template>
+    </li>
+    <li ngbNavItem>
+        <a ngbNavLink [class.active]="tab=='about'" (click)="tab='about'">
+            About
+        </a>
+        <ng-template ngbNavContent>About Tab</ng-template>
+    </li>
+    <li ngbNavItem>
+        <a ngbNavLink [class.active]="tab=='profile'" (click)="tab='profile'">
+            Profile
+        </a>
+        <ng-template ngbNavContent>Profile tab</ng-template>
+    </li>
+</ul>
+<div [ngbNavOutlet]="nav"></div>
+
+<div class="container" [ngSwitch]="tab">
+    <p *ngSwitchCase="'about'">Paragraph in <b>ABOUT</b> tab with Switch Case</p>
+    <p *ngSwitchCase="'profile'">Paragraph in <b>PROFILE</b> tab with Switch Case</p>
+    <p *ngSwitchDefault>Paragraph in <b>HOME</b> tab with Switch Default</p>
+</div>
