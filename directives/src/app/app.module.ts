@@ -11,6 +11,8 @@ import { DirectiveNgstyleComponent } from './directive-ngstyle/directive-ngstyle
 import { FormsModule } from '@angular/forms';
 import { OperatorElvisComponent } from './operator-elvis/operator-elvis.component';
 import { DirectiveNgcontentComponent } from './directive-ngcontent/directive-ngcontent.component';
+import { YellowBackgroundDirective } from './shared/yellow-background.directive';
+import { DirectivesCustomsComponent } from './directives-customs/directives-customs.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { DirectiveNgcontentComponent } from './directive-ngcontent/directive-ngc
     DirectiveNgstyleComponent,
     OperatorElvisComponent,
     DirectiveNgcontentComponent,
+    YellowBackgroundDirective,
+    DirectivesCustomsComponent,
   ],
   imports: [
     BrowserModule,
