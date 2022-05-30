@@ -9,3 +9,21 @@
 <p highlightMouse>
     Highlight text when mouse over
 </p>
+
+<p [highlight]="'red'" [defaultColor]="'grey'">
+    Highlight text with custom colors :D
+</p>
+
+<div *ngIf="showPokemons">
+    Pokemons list here:
+    <p *ngFor='let poke of pokemons'>
+        {{poke}}
+    </p>
+</div>
+<div *ngElse="showPokemons">
+    Pokemons list hidden:
+</div>
+
+<br>
+
+<button (click)="onShowPokemons()">Show/Hide Pokemons</button>
