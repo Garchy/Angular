@@ -2,13 +2,16 @@
   <div class="nav-wrapper">
     <a routerLink="" class="brand-logo right">Routes ng2</a>
     <ul id="nav-mobile" class="left hide-on-med-and-down">
-      <li><a routerLink="/login">Login</a></li>
-      <li><a routerLink="/course">Courses</a></li>
+      <li routerLinkActive="active"><a routerLink="/login">Login</a></li>
+      <li routerLinkActive="active"><a routerLink="/courses">Courses</a></li>
+      <li routerLinkActive="active"><a [routerLink]="['/course', idCourse.value]">Course ID</a></li>
     </ul>
   </div>
 </nav>
 
 <div class="container">
+  <p>Type id course: </p>
+  <input type="text" #idCourse>
   <router-outlet></router-outlet>
 </div>
 
